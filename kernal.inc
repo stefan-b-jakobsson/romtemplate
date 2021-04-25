@@ -1,5 +1,6 @@
 ;(C) 2021 Stefan Jakobsson, License: 2-clause BSD
 
+rom_bank   = $01
 jsrfar3    = $02c4 ; jsrfar: RAM part
 jmpfr      = $02df ; jsrfar: core jmp instruction
 banked_irq = $038b ; irq handler: RAM part
@@ -28,7 +29,7 @@ jsr_kernal:
     sta jmpfr+2
 
     ;Save current bank on stack in extra byte
-    lda $1
+    lda rom_bank
     sta $0104,x
 
     ;Change return address
