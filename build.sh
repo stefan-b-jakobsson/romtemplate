@@ -1,0 +1,1 @@
+cl65 -v -o example.bin -t cx16 -C example.cfg -vm example.s
