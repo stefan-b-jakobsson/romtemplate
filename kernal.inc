@@ -1,3 +1,5 @@
+;(C) 2021 Stefan Jakobsson, License: 2-clause BSD
+
 jsrfar3    = $02c4 ; jsrfar: RAM part
 jmpfr      = $02df ; jsrfar: core jmp instruction
 banked_irq = $038b ; irq handler: RAM part

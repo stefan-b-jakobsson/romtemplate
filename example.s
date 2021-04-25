@@ -1,3 +1,5 @@
+;(C) 2021 Stefan Jakobsson, License: 2-clause BSD
+
 ram_bank = $00
 rom_bank = $01
 
